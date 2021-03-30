@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --navbar-size: 50px;
+}
+
+* {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-width: 320px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+section img {
+  max-width: 100%;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-variant: small-caps;
+  font-family: var(--title-font);
+}
+
+section.inverted {
+  background-color: #333333;
+  color: #eeeeee;
+  margin-left: calc(50% - 50vw + 9px);
+  margin-right: calc(50% - 50vw + 9px);
+}
+
+section .centered {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 768px) {
+  article {
+    margin: auto 0.5rem;
+  }
+}
