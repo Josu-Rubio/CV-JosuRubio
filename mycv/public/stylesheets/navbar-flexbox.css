@@ -1,0 +1,108 @@
+.navbar {
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar > .navbar-list {
+  list-style-type: none;
+  margin: 0;
+
+  flex: 1 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-item a:hover {
+  background-color: #333333;
+  color: aqua;
+}
+
+.logo {
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+}
+
+#burger-checkbox {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .navbar {
+    width: 40%;
+  }
+
+  .navbar > .navbar-list {
+    display: none;
+    flex-direction: column;
+    margin-top: 51px;
+    height: 100vh;
+    justify-content: flex-start;
+    padding: 0;
+    text-align: center;
+  }
+
+  .navbar-item a {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 320px;
+    line-height: 50px;
+    text-align: center;
+    background: black;
+    margin: 0;
+  }
+
+  #burger-checkbox:checked ~ .navbar-list {
+    display: inherit;
+  }
+
+  .burger-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+    font-size: 40px;
+  }
+
+  /* para centrar en vertical las tres rayas:
+        1 rayas de 4px = 4px
+        2 huecos de 10px = 20px
+        50px alto - 20 - 4 = 50-24 = 26px / 2 = 13px
+    */
+  .burger-label:before {
+    content: '';
+    position: absolute;
+    width: 34px;
+    height: 4px;
+    background-color: gray;
+    left: 8px;
+    top: 13px;
+    box-shadow: 0 10px 0 0 gray, 0 20px 0 0 gray;
+  }
+}

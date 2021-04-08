@@ -1,0 +1,33 @@
+@keyframes caida {
+  from {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes subida {
+  from {
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.header > h1 {
+  opacity: 0;
+  animation: caida 1s ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.header > .tagline {
+  opacity: 0;
+  animation: subida 1s ease-in 1s;
+  animation-fill-mode: forwards;
+}
