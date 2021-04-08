@@ -8,17 +8,26 @@ var indexRouter = require('./routes/index');
 var app = express();
 
 // view engine setup
+app.set('view engine', 'ejs');
+
+// Web Routes
 app.get('/', function (req, res) {
   res.render('pages/index');
 });
-app.set('view engine', 'ejs');
+app.get('/mng', function (req, res) {
+  res.render('pages/exp/mng');
+});
+app.get('/tcp', function (req, res) {
+  res.render('pages/exp/tcp');
+});
+app.get('/host', function (req, res) {
+  res.render('pages/exp/host');
+});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
