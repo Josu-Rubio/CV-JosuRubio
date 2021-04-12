@@ -8,17 +8,15 @@ var router = express.Router();
 
 var app = express();
 
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
 /**
  * Setup de i18n
  */
 const i18n = require('./lib/i18nConfigure')();
 app.use(i18n.init);
-
-app.locals.title = 'Mycv';
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
 
 // Web Routes
 app.use('/', indexRouter);

@@ -26,12 +26,9 @@
   margin: 0 0.5rem;
 }
 
-.personal-info {
-  text-align: center;
-}
-
 .copyright {
   color: gray;
+  text-align: center;
 }
 
 @media all and (max-width: 768px) {

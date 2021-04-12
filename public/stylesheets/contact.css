@@ -1,31 +1,42 @@
-.contact-data,
-.message-data {
-  flex: 0 1 48%;
+.info {
+  display: flex;
+  justify-content: space-around;
 }
 
-form label {
-  display: block;
+.photo {
+  margin: 1rem;
 }
 
-input[type='text'],
-input[type='email'],
-textarea {
-  width: 100%;
-  padding: 0.5rem;
+.personal-info {
+  margin: 1rem;
+  text-align: right;
+  font-size: 1.5rem;
 }
 
-button[type='submit'] {
-  border: 0;
-  padding: 0.5rem;
-  font-size: 1.1rem;
-  min-width: 10rem;
-  background-color: deepskyblue;
-  border-radius: 20px;
-  background: linear-gradient(to right, #ccddee, #6dd5f9);
+.personal-info button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.personal-info button:hover {
+  background: dodgerblue;
+  color: white;
 }
 
 @media all and (max-width: 768px) {
-  #contact form {
+  .info {
     flex-direction: column;
+  }
+  .photo {
+    margin: auto;
+  }
+  .personal-info {
+    text-align: center;
   }
 }

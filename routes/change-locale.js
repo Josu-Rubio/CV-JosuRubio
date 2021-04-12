@@ -6,7 +6,7 @@ router.get('/:locale', (req, res, next) => {
 
   const returnTo = req.get('referer');
 
-  res.cookie('mycv-locale', locale, { maxAge: 1000 * 60 * 60 * 24 * 20 });
+  res.cookie('mycv-locale', locale, { maxAge: 60 * 60 * 24 * 20 });
 
   res.redirect(returnTo);
 });

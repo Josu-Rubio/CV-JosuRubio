@@ -18,9 +18,15 @@
   display: block;
   font-weight: bold;
 }
+@media all and (max-width: 1250px) {
+  .header {
+    background: url(../images/header-mini.jpg) no-repeat top center;
+  }
+}
 
 @media all and (max-width: 768px) {
   .header {
+    background: white;
     padding: 1rem;
   }
 

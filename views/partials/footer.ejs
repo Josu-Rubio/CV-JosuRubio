@@ -1,32 +1,21 @@
 <section id="contact" class="inverted">
-  <div class="centered">
-    <h1>Contáctame</h1>
-    <form action="./dos.html" id="contact-form" class="two-columns">
-      <div class="contact-data">
-        <p>
-          <label for="form-name">Nombre:</label>
-          <input type="text" name="name" id="form-name" placeholder="Escribe tu nombre" />
-        </p>
-        <p>
-          <label for="form-email">e-mail:</label>
-          <input type="email" name="email" id="form-email" placeholder="Escribe tu correo electrónico" />
-        </p>
-        <p>
-          <label for="form-subject">Asunto</label>
-          <input type="text" name="subject" id="form-subject" placeholder="De qué va tu mensaje" />
-        </p>
-      </div>
-      <div class="message-data">
-        <p>
-          <label for="form-message">Mensaje:</label>
-          <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
-        </p>
-        <p>
-          <button type="submit">Enviar</button>
-        </p>
-      </div>
-    </form>
+  <h1>
+    <%= __('Contáctame')%>
+  </h1>
+  <div class="info">
+    <div class="photo"><img src="images/main.png" alt="Josué Moreira Rubio"></div>
+    <div class="personal-info">
+      <p>Josué Moreira Rubio</p>
+      <p>23/08/1991</p>
+      <p>+34 655743739</p>
+      <p>josu_mr@hotmail.com</p>
+      <a href="mailto:josu_mr@hotmail.com"><button>
+          <%= __('Contáctame')%>
+        </button></a>
+
+    </div>
   </div>
+
 </section>
 </main>
 
@@ -43,10 +32,8 @@
     </div>
   </aside>
 
-  <main class="personal-info">
-    <p><b>Telf:</b> +34 655743739</p>
-    <p><b>email:</b> josu_mr@hotmail.com</p>
-    <p class="copyright">© Copyright 2021, Josué Rubio <%= __('Todos los derechos reservados')%>
+  <main class="copyright">
+    <p>© Copyright 2021, Josué Rubio <%= __('Todos los derechos reservados')%>
     </p>
   </main>
 
