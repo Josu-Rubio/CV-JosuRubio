@@ -16,6 +16,7 @@
 @media all and (max-width: 768px) {
   .flex-card-container {
     flex-direction: column;
+    height: 60%;
   }
 }
 * {
@@ -68,7 +69,6 @@
   border-radius: 15px;
 }
 .flex-card .info {
-  position: relative;
   z-index: 3;
   color: white;
   opacity: 0;

@@ -2,42 +2,36 @@
   background-color: black;
   color: aliceblue;
   padding: 1rem 2rem;
-}
-
-.footer::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.contact {
-  float: left;
-}
-
-.social {
-  float: right;
-}
-
-.social i::before {
-  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .social-list {
   display: flex;
-  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
-.social-list li {
+.social-list a {
   margin: 0 0.5rem;
 }
 
 .contact-list {
   display: flex;
-  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
-.contact-list li {
+.contact-list a {
   margin: 0 0.5rem;
+}
+
+.personal-info {
+  text-align: center;
+}
+
+.copyright {
+  color: gray;
 }
 
 @media all and (max-width: 768px) {

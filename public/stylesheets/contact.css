@@ -1,28 +1,31 @@
-.contact-data, .message-data {
-    flex: 0 1 48%;
+.contact-data,
+.message-data {
+  flex: 0 1 48%;
 }
 
 form label {
-    display: block;
+  display: block;
 }
 
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: .5rem;
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
 }
 
-button[type="submit"] {
-    border: 0;
-    padding: .5rem;
-    font-size: 1.1rem;
-    min-width: 10rem;
-    background-color: deepskyblue;
-    border-radius: 20px;
-    background: linear-gradient(to right, #ccddee, #6DD5F9)
+button[type='submit'] {
+  border: 0;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  min-width: 10rem;
+  background-color: deepskyblue;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ccddee, #6dd5f9);
 }
 
-@media all and (max-width:768px) {
-    #contacto form {
-        flex-direction: column;
-    }
+@media all and (max-width: 768px) {
+  #contact form {
+    flex-direction: column;
+  }
 }

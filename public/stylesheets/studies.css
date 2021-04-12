@@ -4,12 +4,21 @@
   gap: 1rem 3rem;
 }
 
+.grid-item {
+  text-align: center;
+}
+
+.grid-container-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem 1rem;
+}
+
 @media all and (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr;
   }
-}
-
-.grid-item {
-  text-align: center;
+  .grid-container-data {
+    grid-template-columns: 1fr 1fr;
+  }
 }

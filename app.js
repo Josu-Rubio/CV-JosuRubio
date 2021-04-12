@@ -4,24 +4,33 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 
 var indexRouter = require('./routes/index');
+var router = express.Router();
 
 var app = express();
 
+/**
+ * Setup de i18n
+ */
+const i18n = require('./lib/i18nConfigure')();
+app.use(i18n.init);
+
+app.locals.title = 'Mycv';
+
 // view engine setup
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // Web Routes
-app.get('/', function (req, res) {
-  res.render('pages/index');
+app.use('/', indexRouter);
+app.use('/change-locale', require('./routes/change-locale'));
+app.use('/mng', function (req, res) {
+  res.render('pages/mng');
 });
-app.get('/mng', function (req, res) {
-  res.render('pages/exp/mng');
+app.use('/tcp', function (req, res) {
+  res.render('pages/tcp');
 });
-app.get('/tcp', function (req, res) {
-  res.render('pages/exp/tcp');
-});
-app.get('/host', function (req, res) {
-  res.render('pages/exp/host');
+app.use('/host', function (req, res) {
+  res.render('pages/host');
 });
 
 app.use(express.json());

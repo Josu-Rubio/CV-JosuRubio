@@ -5,17 +5,14 @@
         <header id="header" class="header">
 
             <h1>
-                Hola, mi nombre es <span>Josué Rubio</span> y este es mi currículum.
+                <%= __('Hola, mi nombre es')%> <span>Josué Rubio</span>
+                    <%= __('y este es mi currículum')%>.
             </h1>
 
             <p class="tagline">
-                Joven entusiasta con grandes cualidades administrativas y de gestión, creando una carrera profesional
-                como
-                <strong>Full Stack Web Developer</strong>. Con extraordinarias dotes de liderazgo y habilidad para la
-                toma
-                de decisiones.
-                Facilidad para trabajar en equipo y persistencia a la hora de alcanzar los resultados deseados. Buenas
-                habilidades sociales y capacidad de comunicación.
+                <%= __('tagline 1')%>
+                    <strong>Full Stack Web Developer</strong>.
+                    <%= __('tagline 2')%>
             </p>
 
         </header>
@@ -172,6 +169,54 @@
                         <p class="formacion-name">Colegio Colón Hermanos Maristas</p>
                         <p>Huelva</p>
                     </article>
+                </div>
+
+            </section>
+
+            <section id="more-data">
+                <h1>Otros Datos de Interés</h1>
+
+                <div class="grid-container-data">
+                    <article class="grid-item">
+                        <h2>Conocimientos extra</h2>
+                        <!-- <img src="images/Formación/keepcoding.jpg" alt="Keepcoding" /> -->
+                        <p>Diseño en Photoshop</p>
+                        <p>Metodología Agile</p>
+                        <p>Gestión de MarketPlaces</p>
+                        <p>Manejo de Linnworks</p>
+                        <p>Manejo de Trello</p>
+                    </article>
+
+                    <article class="grid-item">
+                        <h2>
+                            <%= __('Intereses')%>
+                        </h2>
+
+                        <p>Deporte</p>
+                        <p>Viajes</p>
+                        <p>Libros</p>
+                        <p>Videojuegos</p>
+                    </article>
+
+                    <article class="grid-item">
+                        <h2>Curiosidades</h2>
+                        <!-- <img src="images/formación/pabloolavide.jpg" alt="Pablo de Olavide" /> -->
+                        <p>Maestro cafetero (Pruébame)</p>
+                        <p>Ganador de concurso de Mates (baloncesto) con 18 años</p>
+                        <p>Saxofonista</p>
+                        <p>Tiefling Bardo (También respondo al nombre de Dharcius)</p>
+                        <p>Orgulloso poseedor de una colección de más de 30 sombreros</p>
+                    </article>
+
+                    <article class="grid-item">
+                        <h2>Movilidad</h2>
+                        <!-- <img src="images/formación/eshs.jpg" alt="Escuela de hostelería de Sevilla" /> -->
+                        <p>Carnet de conducir</p>
+                        <p>Vehículo propio</p>
+                        <p>Total disponibilidad para viajar</p>
+                    </article>
+
+
                 </div>
 
             </section>

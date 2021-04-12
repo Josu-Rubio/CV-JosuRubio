@@ -111,3 +111,15 @@
     box-shadow: 0 10px 0 0 gray, 0 20px 0 0 gray;
   }
 }
+.language {
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+}
+
+.language a {
+  text-decoration: none;
+  color: white;
+}
