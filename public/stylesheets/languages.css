@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
 }
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0rem 1rem;
+}
 
 .skills {
   flex: 0 1 50%;
@@ -52,19 +57,44 @@
   width: 100%;
 }
 
+.skill-90 {
+  width: 90%;
+}
+
 .skill-80 {
   width: 80%;
+}
+
+.skill-70 {
+  width: 70%;
 }
 
 .skill-60 {
   width: 60%;
 }
 
+.skill-50 {
+  width: 50%;
+}
+
 .skill-40 {
   width: 40%;
 }
+
+.skill-30 {
+  width: 30%;
+}
+
 .skill-20 {
   width: 20%;
+}
+
+.skill-10 {
+  width: 10%;
+}
+
+.skill-0 {
+  width: 0%;
 }
 
 @media all and (max-width: 768px) {
