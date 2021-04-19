@@ -1,0 +1,46 @@
+.header-exp {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.work-exp {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.work h2 {
+  text-decoration: underline;
+}
+
+.work img {
+  border-collapse: collapse;
+  padding: 0;
+}
+
+.work .name {
+  color: rgb(82, 81, 81);
+}
+
+.work ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+}
+.work li {
+  text-align: left;
+  /* list-style-type: none; */
+}
+
+.date-place {
+  color: grey;
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+@media all and (max-width: 768px) {
+  .work-exp {
+    margin: 3rem 2rem;
+  }
+}

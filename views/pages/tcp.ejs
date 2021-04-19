@@ -1,53 +1,53 @@
 <%- include('../partials/header'); %>
-    <%- include ('../partials/navigation'); %>
+    <ul class="navbar-list">
+        <li class="navbar-item"><a href="/">
+                <%= __('Currículum')%>
+            </a></li>
 
-        </nav>
+        <li class="navbar-item"><a href="#contact">
+                <%= __('Contacto')%>
+            </a></li>
+    </ul>
+    </nav>
+    <header class="header-exp">
+        <h1>
+            <%= __('TCP')%>
+        </h1>
+    </header>
+    <main class="work-exp">
 
-        <section id="studies">
-            <h1>Dirección y Operaciones</h1>
 
-            <div class="grid-container">
-                <article class="grid-item">
-                    <h2>Bootcamp Full Stack Web</h2>
-                    <img src="images/Formación/keepcoding.jpg" alt="Keepcoding" />
-                    <p class="formacion-name">KeepCoding España</p>
-                    <p class="formacion-date">11/2019 - 08/2020</p>
-                    <p>Madrid (Online)</p>
-                </article>
-
-                <article class="grid-item">
-                    <h2>Curso de TCP</h2>
-                    <img src="images/formación/cae.jpg" alt="CAE" />
-                    <p class="formacion-name">Escuela de Aeronavegación CAE</p>
-                    <p class="formacion-date">10/2013</p>
-                    <p>Barcelona</p>
-                </article>
-
-                <article class="grid-item">
-                    <h2>Postgrado de Especialista en Dirección y Gestión Hotelera</h2>
-                    <img src="images/formación/pabloolavide.jpg" alt="Pablo de Olavide" />
-                    <p class="formacion-name">Universidad Pablo de Olavide</p>
-                    <p class="formacion-date">10/2012 – 06/2013</p>
-                    <p>Sevilla</p>
-                </article>
-
-                <article class="grid-item">
-                    <h2>Título Superior Universitario de Dirección Hotelera</h2>
-                    <img src="images/formación/eshs.jpg" alt="Escuela de hostelería de Sevilla" />
-                    <p class="formacion-name">Escuela de Hostelería “Taberna del Alabardero”</p>
-                    <p class="formacion-date">10/2009 – 06/2013</p>
-                    <p>Sevilla</p>
-                </article>
-
-                <article class="grid-item">
-                    <h2>Educación Secundaria y Bachillerato</h2>
-                    <img src="images/formación/maristashuelva.jpg" alt="Hermanos Maristas" />
-                    <p class="formacion-name">Colegio Colón Hermanos Maristas</p>
-                    <p>Huelva</p>
-                </article>
+        <section class="work">
+            <div class="profession">
+                <h2>Técnico de Cabina de Pasajeros</h2>
+                <div class="company"><img src="images/detail/vueling.jpg" alt="vueling">
+                    <h3 class="name">Vueling Airlines</h3>
+                    <p class="description">Puesto de Técnico de Cabina de Pasajeros (TCP), también conocido como Azafato
+                        de Vuelo, coordinando con los compañeros las medidas de seguridad de la aeronave y sus
+                        inmediaciones, así como
+                        buscando la mayor
+                        comodidad y satisfacción de todo el pasaje durante el tiempo de vuelo.</p>
+                    <h3>
+                        <%= __('Funciones principales:')%>
+                    </h3>
+                    <ul>
+                        <li>Verificación de todo el material de seguridad, así como realización del inventario</li>
+                        <li>Coordinar posibles operaciones de evacuación y rescate</li>
+                        <li>Atender posibles lesiones o heridas que se produzcan durante el vuelo</li>
+                        <li>Velar por la seguridad y el orden de los pasajeros</li>
+                        <li>Informar a los viajeros de las normas de evacuación y salidas de emergencia</li>
+                        <li>Dar información relevante en nombre del piloto y contestar las preguntas de los pasajeros
+                            durante el vuelo</li>
+                        <li>Dar la bienvenida a los pasajeros y acomodarlos</li>
+                        <li>Proporcionar alimentos y bebidas al pasaje durante el vuelo</li>
+                    </ul>
+                    <p class="date-place">03/2014 – 09/2016 - Barcelona</p>
+                </div>
             </div>
-
         </section>
 
 
-        <%- include ('../partials/footer'); %>
+    </main>
+
+
+    <%- include ('../partials/footer'); %>

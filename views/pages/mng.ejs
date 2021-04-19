@@ -1,53 +1,90 @@
 <%- include('../partials/header'); %>
-    <%- include ('../partials/navigation'); %>
+    <ul class="navbar-list">
+        <li class="navbar-item"><a href="/">
+                <%= __('Currículum')%>
+            </a></li>
 
-        </nav>
+        <li class="navbar-item"><a href="#contact">
+                <%= __('Contacto')%>
+            </a></li>
+    </ul>
+    </nav>
+    <header class="header-exp">
+        <h1>
+            <%= __('Dirección y Operaciones')%>
+        </h1>
+    </header>
+    <main class="work-exp">
 
-        <section id="studies">
-            <h1>Dirección y Operaciones</h1>
 
-            <div class="grid-container">
-                <article class="grid-item">
-                    <h2>Bootcamp Full Stack Web</h2>
-                    <img src="images/Formación/keepcoding.jpg" alt="Keepcoding" />
-                    <p class="formacion-name">KeepCoding España</p>
-                    <p class="formacion-date">11/2019 - 08/2020</p>
-                    <p>Madrid (Online)</p>
-                </article>
-
-                <article class="grid-item">
-                    <h2>Curso de TCP</h2>
-                    <img src="images/formación/cae.jpg" alt="CAE" />
-                    <p class="formacion-name">Escuela de Aeronavegación CAE</p>
-                    <p class="formacion-date">10/2013</p>
-                    <p>Barcelona</p>
-                </article>
-
-                <article class="grid-item">
-                    <h2>Postgrado de Especialista en Dirección y Gestión Hotelera</h2>
-                    <img src="images/formación/pabloolavide.jpg" alt="Pablo de Olavide" />
-                    <p class="formacion-name">Universidad Pablo de Olavide</p>
-                    <p class="formacion-date">10/2012 – 06/2013</p>
-                    <p>Sevilla</p>
-                </article>
-
-                <article class="grid-item">
-                    <h2>Título Superior Universitario de Dirección Hotelera</h2>
-                    <img src="images/formación/eshs.jpg" alt="Escuela de hostelería de Sevilla" />
-                    <p class="formacion-name">Escuela de Hostelería “Taberna del Alabardero”</p>
-                    <p class="formacion-date">10/2009 – 06/2013</p>
-                    <p>Sevilla</p>
-                </article>
-
-                <article class="grid-item">
-                    <h2>Educación Secundaria y Bachillerato</h2>
-                    <img src="images/formación/maristashuelva.jpg" alt="Hermanos Maristas" />
-                    <p class="formacion-name">Colegio Colón Hermanos Maristas</p>
-                    <p>Huelva</p>
-                </article>
+        <section class="work">
+            <div class="profession">
+                <h2>CEO</h2>
+                <div class="company"><img src="images/detail/wonbu.jpg" alt="wonbu">
+                    <h3 class="name">WONBU</h3>
+                    <p class="description"></p>
+                    <h3>
+                        <%= __('Funciones principales:')%>
+                    </h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p class="date-place">08/2020 – 03/2021 - Huelva</p>
+                </div>
             </div>
+        </section>
 
+        <section class="work">
+            <div class="profession">
+                <h2>Gestor de Operaciones de Tráfico</h2>
+                <div class="company"><img src="images/detail/gto.jpg" alt="gto">
+                    <h3 class="name">Grupo TransOnuba</h3>
+                    <p class="description"></p>
+                    <h3>
+                        <%= __('Funciones principales:')%>
+                    </h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p class="date-place">11/2018 - 11/2019 - Niebla</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="profession">
+                <h2>COO</h2>
+                <div class="company"><img src="images/detail/wonbu.jpg" alt="wonbu">
+                    <h3 class="name">WONBU</h3>
+                    <p class="description">Director de Operaciones de la empresa encargado de la gestión de tiempos de
+                        los trabajadores y su rentabilidad, así como la correcta utilización de los medios. Activo en la
+                        toma de decisiones de la empresa y gestor principal de las aplicaciones en uso (ReplyManager,
+                        Linnworks...)</p>
+                    <h3>
+                        <%= __('Funciones principales:')%>
+                    </h3>
+                    <ul>
+                        <li>Gestión de los trabajadores</li>
+                        <li>Reducción de tiempos de trabajo</li>
+                        <li>Innovación dentro del departamento</li>
+                        <li>Gestión contable de la empresa</li>
+                        <li>Coordinación del trabajo con el CEO</li>
+                        <li>Comunicación con el departamento logístico de transporte</li>
+                        <li>Gestión de las importaciones y compras</li>
+                        <li>Coordinación del trabajo con el equipo informático</li>
+                        <li>Diseño de imágenes y estructuras con el departamento de márketing</li>
+                    </ul>
+                    <p class="date-place">02/2017 – 05/2018 - Huelva</p>
+                </div>
+            </div>
         </section>
 
 
-        <%- include ('../partials/footer'); %>
+    </main>
+    <%- include ('../partials/footer'); %>

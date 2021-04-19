@@ -40,7 +40,7 @@
 .flex-card:hover:before {
   opacity: 1;
 }
-.flex-card:hover .info {
+.flex-card:hover .info-card {
   opacity: 1;
   transform: translateY(0px);
 }
@@ -68,22 +68,22 @@
   left: 0;
   border-radius: 15px;
 }
-.flex-card .info {
+.flex-card .info-card {
   z-index: 3;
   color: white;
   opacity: 0;
   transform: translateY(30px);
   transition: 0.5s;
 }
-.flex-card .info h1 {
+.flex-card .info-card h1 {
   margin: 0px;
 }
-.flex-card .info p {
+.flex-card .info-card p {
   letter-spacing: 1px;
   font-size: 15px;
   margin-top: 8px;
 }
-.flex-card .info button {
+.flex-card .info-card button {
   padding: 0.6rem;
   outline: none;
   border: none;
@@ -94,7 +94,7 @@
   cursor: pointer;
   transition: 0.4s ease;
 }
-.flex-card .info button:hover {
+.flex-card .info-card button:hover {
   background: dodgerblue;
   color: white;
 }
