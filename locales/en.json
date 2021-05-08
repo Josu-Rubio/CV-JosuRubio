@@ -2,7 +2,7 @@
 	"Intereses": "Interests",
 	"Hola, mi nombre es": "Hi, my name is",
 	"y este es mi currículum": "and this is my resume",
-	"tagline 1": "Young and enthusiast person with great management habilities, making a carrer as a",
+	"tagline 1": "Young and enthusiast person with great management abilities, making a carrer as a",
 	"tagline 2": "Extraordinary leadership and decision-making skills. Great Ability to work in teams and persistence achieving the desired results. Good social and communication skills.",
 	"Todos los derechos reservados": "All rights reserved",
 	"Inicio": "Home",
@@ -171,5 +171,10 @@
 	"Gestión de las importaciones y compras": "Management of imports and purchases",
 	"Coordinación del trabajo con el equipo informático": "Work coordination with the IT team",
 	"Diseño de imágenes y estructuras con el departamento de márketing": "Design of images and structures with the marketing department",
-	"Informar a la carta así como su composición": "Informar a la carta así como su composición"
+	"Informar a la carta así como su composición": "Informar a la carta así como su composición",
+	"C1": "C1",
+	"A2": "A2",
+	"A1": "A1",
+	"Metodología Agile-SCRUM": "Agile-SCRUM Method",
+	"Familiarizado con Git": "Familiar with Git"
 }
